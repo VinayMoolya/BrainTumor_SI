@@ -17,7 +17,7 @@ import tensorflow_hub as hub
 app = Flask(__name__)
 
 # Model saved with Keras model.save()
-model = load_model(('BrainTumor_SI/braintumor.h5'), custom_objects={'KerasLayer': hub.KerasLayer})
+model = load_model(('braintumor.h5'), custom_objects={'KerasLayer': hub.KerasLayer})
 
 
 def model_predict(img_path, model):
